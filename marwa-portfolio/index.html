@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marwa Hussen | Pharmacist at Shifa Pharmacy</title>
+<meta name="description" content="Pharmacist at Shifa Pharmacy, Minya. Prescription dispensing, patient counseling and medication safety.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Cairo:wght@700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fafdfb; --ink:#17322b; --muted:#526860; --deep:#12372e; --green:#1f5a49;
+  --mint:#e4f1ea; --soft:#b9d3c7; --line:#d3e3da; --coral:#a0cdbf;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --sans:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ar:"Cairo","Segoe UI",Tahoma,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.65;font-size:17px;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+/* hero: dark green, the first thing you see */
+.top{background:var(--deep);color:#fff;position:relative;overflow:hidden}
+header{padding:20px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;color:#fff}
+.brand svg{width:34px;height:34px}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--soft);font-weight:500;font-size:.95rem}
+nav a:hover{color:#fff}
+
+.hero{padding:70px 0 96px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(3.2rem,9vw,6.6rem);line-height:.95;letter-spacing:-.035em}
+.role{margin-top:20px;font-family:var(--display);font-weight:600;font-size:1.35rem;color:var(--coral)}
+.lead{margin-top:16px;max-width:42ch;color:var(--soft);font-size:1.08rem}
+.actions{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s}
+.btn.coral{background:var(--coral);color:var(--deep);border-color:var(--coral)}
+.btn.coral:hover{background:#fff;border-color:#fff}
+.btn.ghost{color:#fff;border-color:rgba(255,255,255,.5)}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+
+.art{position:relative;padding:28px 0}
+.pill{display:flex;border-radius:999px;overflow:hidden;transform:rotate(-6deg);box-shadow:0 24px 60px rgba(0,0,0,.35);animation:settle .9s ease-out both}
+.pill .l{flex:1;background:var(--mint);display:flex;align-items:center;justify-content:center;padding:30px}
+.pill .l svg{width:min(100%,140px);height:auto}
+.pill .r{flex:1.25;background:var(--green);display:flex;flex-direction:column;justify-content:center;padding:30px 30px}
+.pill .ar{font-family:var(--ar);font-weight:700;font-size:clamp(2.2rem,5.5vw,3.4rem);line-height:1.1}
+.pill .en{font-family:var(--display);font-weight:600;font-size:1.05rem;color:var(--soft)}
+.cap{position:absolute;width:84px;height:34px;border-radius:999px;background:linear-gradient(90deg,#fff 50%,var(--coral) 50%);box-shadow:0 10px 24px rgba(0,0,0,.3);animation:float 6s ease-in-out infinite alternate}
+.c1{top:-6px;left:2%;--r:-24deg}
+.c2{bottom:-8px;right:6%;--r:18deg;animation-delay:-2s}
+.c3{top:46%;right:-14px;width:60px;height:24px;--r:50deg;animation-delay:-4s}
+@keyframes settle{from{transform:rotate(-16deg) translateY(20px);opacity:0}to{transform:rotate(-6deg);opacity:1}}
+@keyframes float{from{transform:translateY(0) rotate(var(--r))}to{transform:translateY(-14px) rotate(calc(var(--r) + 8deg))}}
+
+/* scrolling strip */
+.strip{background:var(--coral);color:var(--deep);overflow:hidden;padding:15px 0;font-family:var(--display);font-weight:700;font-size:1.2rem}
+.track{display:flex;width:max-content;animation:slide 30s linear infinite}
+.track div{display:flex}
+.track span{padding:0 24px;white-space:nowrap}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+section{padding:72px 0}
+h2{font-family:var(--display);font-weight:700;color:var(--green);letter-spacing:-.02em}
+.sec{font-size:2.1rem;margin-bottom:26px}
+
+.about .cols{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start}
+.about h2{font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.08}
+.prose{color:var(--muted)}
+.prose p+p{margin-top:14px}
+.facts{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}
+.facts span,.tags li{background:var(--mint);border-radius:999px;padding:8px 18px;font-weight:600;font-size:.95rem;color:var(--green)}
+.tags{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+
+.skills{background:var(--mint)}
+.skills .tags li{background:#fff}
+
+.timeline{list-style:none;border-left:3px solid var(--line);margin-left:6px}
+.timeline li{position:relative;padding:0 0 34px 32px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-10px;top:7px;width:17px;height:17px;border-radius:50%;background:var(--coral);border:3px solid var(--bg)}
+.timeline h3{font-family:var(--display);font-size:1.3rem}
+.timeline .meta{color:var(--green);font-weight:600;font-size:.92rem;margin:2px 0 8px}
+.timeline p{max-width:60ch;color:var(--muted)}
+
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.tile{background:var(--deep);color:#fff;border-radius:28px;padding:30px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.tile b{font-family:var(--display);font-size:2.6rem;line-height:1;color:var(--coral)}
+.tile span{font-family:var(--display);font-weight:600;font-size:1.2rem}
+.tile:nth-child(2),.tile:nth-child(3){background:var(--green)}
+.hours{margin-top:26px;color:var(--muted)}
+.hours strong{font-family:var(--display);color:var(--green);font-size:1.15rem}
+
+.contact{background:var(--deep);color:#fff;text-align:center}
+.contact h2{color:#fff;font-size:clamp(2rem,5vw,3.4rem);margin-bottom:14px}
+.contact p{color:var(--soft);max-width:44ch;margin:0 auto}
+.num{display:inline-block;margin-top:26px;font-family:var(--display);font-weight:800;font-size:clamp(2rem,7vw,4rem);color:var(--coral);text-decoration:none;letter-spacing:-.02em}
+.contact .actions{justify-content:center}
+footer{padding:22px 0;text-align:center;background:var(--deep);color:var(--soft);font-size:.9rem;border-top:1px solid rgba(255,255,255,.12)}
+
+@media (max-width:800px){
+  body{font-size:16px}
+  .hero{padding:44px 0 64px}
+  .hero .wrap,.about .cols{grid-template-columns:1fr;gap:36px}
+  .art{order:-1;padding:34px 0 20px}
+  .pill .l{padding:18px}.pill .r{padding:18px 20px}
+  .c3{right:-4px}
+  .tiles{grid-template-columns:1fr}
+  section{padding:52px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pill,.cap,.track{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="48" fill="#1f5a49"/>
+    <g transform="rotate(-40 50 50)">
+      <rect x="20" y="38" width="60" height="24" rx="12" fill="#fff"/>
+      <path d="M50 38h18a12 12 0 0 1 0 24H50z" fill="#e8836b"/>
+    </g>
+  </symbol>
+</svg>
+
+<div class="top" id="top">
+  <header>
+    <div class="wrap">
+      <a class="brand" href="#top"><svg aria-hidden="true"><use href="#logo"/></svg>Marwa Hussen</a>
+      <nav aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#pharmacy">Pharmacy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Marwa Hussein</h1>
+        <p class="role">Pharmacist at Shifa Pharmacy</p>
+        <p class="lead">Care you can trust. I help patients understand their medicine, simply and calmly, so they use it safely.</p>
+        <div class="actions">
+          <a class="btn coral" href="https://wa.me/201027666122" target="_blank" rel="noopener">Message on WhatsApp</a>
+          <a class="btn ghost" href="#experience">See my experience</a>
+        </div>
+      </div>
+      <div class="art">
+        <span class="cap c1" aria-hidden="true"></span>
+        <span class="cap c2" aria-hidden="true"></span>
+        <span class="cap c3" aria-hidden="true"></span>
+        <div class="pill" role="img" aria-label="Shifa Pharmacy logo">
+          <div class="l"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#logo"/></svg></div>
+          <div class="r"><span class="ar" lang="ar" dir="rtl">شفاء</span><span class="en">Shifa Pharmacy</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="strip" aria-hidden="true">
+  <div class="track">
+    <div><span>Prescription dispensing</span><span>+</span><span>Patient counseling</span><span>+</span><span>Medication safety</span><span>+</span><span>Blood pressure checks</span><span>+</span><span>Home delivery</span><span>+</span></div>
+    <div><span>Prescription dispensing</span><span>+</span><span>Patient counseling</span><span>+</span><span>Medication safety</span><span>+</span><span>Blood pressure checks</span><span>+</span><span>Home delivery</span><span>+</span></div>
+  </div>
+</div>
+
+<main>
+  <section id="about" class="about">
+    <div class="wrap cols">
+      <h2>Medicine works best when patients understand it.</h2>
+      <div>
+        <div class="prose">
+          <p>I'm a recent pharmacy graduate working at Shifa Pharmacy in Minya. I care about medication safety and about explaining things in a way patients actually remember.</p>
+          <p>I enjoy the daily work of a community pharmacy: reading prescriptions carefully, answering questions, and making sure every patient leaves knowing how to take their medicine.</p>
+        </div>
+        <div class="facts">
+          <span>B.Pharm, Minya University, 2025</span>
+          <span>Minya, Egypt</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="wrap">
+      <h2 class="sec">Skills</h2>
+      <ul class="tags">
+        <li>Reading prescriptions</li>
+        <li>Dispensing basics</li>
+        <li>Patient counseling</li>
+        <li>Drug interactions</li>
+        <li>Side effects and safe use</li>
+        <li>Stock checks</li>
+        <li>Microsoft Office</li>
+        <li>English</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2 class="sec">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <h3>Summer training, Shifa Pharmacy</h3>
+          <p class="meta">Minya · July to August 2025</p>
+          <p>Dispensed prescriptions under supervision, checked stock, and answered customer questions about dosage and storage.</p>
+        </li>
+        <li>
+          <h3>Graduation project</h3>
+          <p class="meta">Faculty of Pharmacy, Minya University · 2025</p>
+          <p>A short study on how well community pharmacy customers understand safe medication use, and which questions they ask most.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="pharmacy" style="background:var(--mint)">
+    <div class="wrap">
+      <h2 class="sec">What Shifa Pharmacy offers</h2>
+      <div class="tiles">
+        <div class="tile"><b>+</b><span>Prescription dispensing</span></div>
+        <div class="tile"><b>+</b><span>Blood pressure and glucose checks</span></div>
+        <div class="tile"><b>+</b><span>Medication advice</span></div>
+        <div class="tile"><b>+</b><span>Home delivery</span></div>
+      </div>
+      <p class="hours"><strong>Open every day, 9 AM to 11 PM</strong> · Minya, Egypt</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Need advice about your medicine?</h2>
+      <p>Call or message me on WhatsApp. I'm also open to pharmacy and healthcare roles.</p>
+      <a class="num" href="tel:+201027666122">+20 10 2766 6122</a>
+      <div class="actions">
+        <a class="btn coral" href="https://wa.me/201027666122" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn ghost" href="tel:+201027666122">Call</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Marwa Hussen</div>
+</footer>
+
+</body>
+</html>
